@@ -5,7 +5,7 @@ A上安装： golang编译环境，ansible工具，harbor镜像仓库服务（�
 B、C上安装： docker-ce-18.06.3（开机启动）。
 
 ### 目标：
-1. 在A上使用golang编写代码：实现一个web服务，在访问 http://[主机名]/self/ 时返回 "Hello [主机名]!"；
+1. 在A上使用golang编写代码：实现一个web服务，在访问 http://[主机名]/self/ 时返回 "Hello [主机名] [版本号]!"；
 2. 在A服务器上使用ansible-playbook命令实现：
    - 2.1 将golang代码编译成二进制文件并打包成为镜像，同时修改tag号递增加1，从v1开始；
    - 2.2 将新的镜像上传到harbor保存；
